@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0d10;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #0b0d10;
+    border-bottom: 1px solid #24272c;
+}
+
+.navbar {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background: #e63946;
+    color: white;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #c72e39;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #777;
+}
+
+.hero {
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 7, 10, .95),
+            rgba(5, 7, 10, .55)
+        ),
+        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    padding-top: 150px;
+}
+
+.red-text {
+    color: #e63946;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #e63946;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #bbb;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 15px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.section-title a,
+.car-bottom a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.cars {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.car-card {
+    background: #15191f;
+
+    border: 1px solid #282d34;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.car-image {
+    height: 230px;
+    position: relative;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.car-image span {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding: 7px 12px;
+
+    background: #e63946;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+.car-content {
+    padding: 20px;
+}
+
+.car-content small {
+    color: #888;
+}
+
+.car-content h3 {
+    font-size: 23px;
+    margin: 10px 0 18px;
+}
+
+.specs {
+    display: flex;
+    gap: 15px;
+
+    color: #aaa;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #30343a;
+}
+
+.car-bottom {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 18px;
+}
+
+.car-bottom strong {
+    font-size: 19px;
+}
+
+.advantages {
+    background: #12161b;
+    padding: 60px 0;
+}
+
+.advantages-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.icon {
+    color: #e63946;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.advantages p {
+    color: #888;
+    margin-top: 10px;
+}
+
+footer {
+    border-top: 1px solid #252a30;
+}
+
+.footer {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p {
+    color: #777;
+}
+
+.page-title {
+    background: #11151a;
+    padding: 80px 0 50px;
+}
+
+.page-title h1 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.page-title p:last-child {
+    color: #888;
+}
+
+.detail {
+    display: grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.detail-image {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.detail h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.price {
+    color: #e63946;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.detail-specs {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+.detail-specs div {
+    background: #15191f;
+    padding: 17px;
+    border-radius: 7px;
+}
+
+.detail-specs small {
+    display: block;
+    color: #777;
+    margin-bottom: 7px;
+}
+
+.contact {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact > div > p {
+    color: #999;
+    line-height: 1.7;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    margin-top: 25px;
+}
+
+.contact-info span {
+    color: #888;
+}
+
+.form {
+    background: #15191f;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+.form label {
+    display: block;
+
+    color: #ccc;
+
+    margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 8px;
+
+    padding: 14px;
+
+    background: #0c0f13;
+
+    border: 1px solid #30353c;
+
+    border-radius: 6px;
+
+    color: white;
+
+    outline: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #e63946;
+}
+
+.success {
+    background: #164525;
+
+    color: #76e39b;
+
+    padding: 15px;
+
+    border-radius: 7px;
+
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .cars,
+    .advantages-grid,
+    .detail,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-image {
+        height: 300px;
+    }
+
+    .detail h1 {
+        font-size: 36px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
